@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;  //使用标准命名空间
+int main() {
+	double length, width, hight, volume, area;
+	cout << "请输入长宽高";
+	cin>> length >> width >> hight;
+	volume = length * width * hight;
+	area = 2 * (length * width + width * hight + hight * length);
+	cout << "体积为" << volume << endl;
+	cout << "表面积为" << area << endl;
+	return 0;
+  }
