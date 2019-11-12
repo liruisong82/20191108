@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "输入两个整数：";
+		int a, b,t,c,d;
+		cin >> a >> b;
+		if (a < b)
+		{
+			t = (b % a);
+			do {
+				c = (a % t);
+				d = a;
+				a = t;
+				t = c;
+			} while (c !=  0);
+			cout << d;
+		}
+		else if (a > b)
+		{
+			t = a % b;
+			do {
+				c = b % t;
+				d = b;
+				b = t;
+				t = c;
+			} while (c != 0);
+			cout << d;
+		}
+		else if (a == b)
+		{
+			cout << a;
+		}
+		return 0;
+
+
+			
+			
+			
+	
+	
+    
+}
